@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		6C322D7222B0B9F600E78C25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C322D7122B0B9F600E78C25 /* AppDelegate.swift */; };
-		6C322D7422B0B9F600E78C25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C322D7322B0B9F600E78C25 /* ViewController.swift */; };
+		6C322D7422B0B9F600E78C25 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C322D7322B0B9F600E78C25 /* MainVC.swift */; };
 		6C322D7722B0B9F600E78C25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C322D7522B0B9F600E78C25 /* Main.storyboard */; };
 		6C322D7922B0BA2000E78C25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C322D7822B0BA2000E78C25 /* Assets.xcassets */; };
 		6C322D7C22B0BA2000E78C25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C322D7A22B0BA2000E78C25 /* LaunchScreen.storyboard */; };
+		6C322D8422B0BBD000E78C25 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C322D8322B0BBD000E78C25 /* Constants.swift */; };
+		6C322D8622B0BBF300E78C25 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C322D8522B0BBF300E78C25 /* Person.swift */; };
+		6C322D8B22B0BEBB00E78C25 /* JSONDecoder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C322D8A22B0BEBB00E78C25 /* JSONDecoder+Extension.swift */; };
+		6C3F5DEF22B0E86B00635F78 /* BlackBgButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3F5DEE22B0E86B00635F78 /* BlackBgButton.swift */; };
+		6C3F5DF122B0E88A00635F78 /* BlackBgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3F5DF022B0E88A00635F78 /* BlackBgView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6C322D6E22B0B9F500E78C25 /* CRUD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CRUD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C322D7122B0B9F600E78C25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6C322D7322B0B9F600E78C25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6C322D7322B0B9F600E78C25 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		6C322D7622B0B9F600E78C25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6C322D7822B0BA2000E78C25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C322D7B22B0BA2000E78C25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C322D7D22B0BA2000E78C25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C322D8322B0BBD000E78C25 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6C322D8522B0BBF300E78C25 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		6C322D8A22B0BEBB00E78C25 /* JSONDecoder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Extension.swift"; sourceTree = "<group>"; };
+		6C3F5DEE22B0E86B00635F78 /* BlackBgButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackBgButton.swift; sourceTree = "<group>"; };
+		6C3F5DF022B0E88A00635F78 /* BlackBgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackBgView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +65,42 @@
 			isa = PBXGroup;
 			children = (
 				6C322D7122B0B9F600E78C25 /* AppDelegate.swift */,
-				6C322D7322B0B9F600E78C25 /* ViewController.swift */,
+				6C322D8722B0BC7800E78C25 /* Model */,
+				6C322D8922B0BC9100E78C25 /* Controller */,
+				6C322D8822B0BC8600E78C25 /* Resources */,
 				6C322D7522B0B9F600E78C25 /* Main.storyboard */,
 				6C322D7822B0BA2000E78C25 /* Assets.xcassets */,
 				6C322D7A22B0BA2000E78C25 /* LaunchScreen.storyboard */,
 				6C322D7D22B0BA2000E78C25 /* Info.plist */,
 			);
 			path = CRUD;
+			sourceTree = "<group>";
+		};
+		6C322D8722B0BC7800E78C25 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6C322D8522B0BBF300E78C25 /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6C322D8822B0BC8600E78C25 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6C322D8322B0BBD000E78C25 /* Constants.swift */,
+				6C322D8A22B0BEBB00E78C25 /* JSONDecoder+Extension.swift */,
+				6C3F5DEE22B0E86B00635F78 /* BlackBgButton.swift */,
+				6C3F5DF022B0E88A00635F78 /* BlackBgView.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6C322D8922B0BC9100E78C25 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6C322D7322B0B9F600E78C25 /* MainVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C322D7422B0B9F600E78C25 /* ViewController.swift in Sources */,
+				6C322D7422B0B9F600E78C25 /* MainVC.swift in Sources */,
 				6C322D7222B0B9F600E78C25 /* AppDelegate.swift in Sources */,
+				6C3F5DEF22B0E86B00635F78 /* BlackBgButton.swift in Sources */,
+				6C322D8622B0BBF300E78C25 /* Person.swift in Sources */,
+				6C3F5DF122B0E88A00635F78 /* BlackBgView.swift in Sources */,
+				6C322D8B22B0BEBB00E78C25 /* JSONDecoder+Extension.swift in Sources */,
+				6C322D8422B0BBD000E78C25 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
